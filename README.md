@@ -95,3 +95,11 @@ This project is licensed under the MIT License – see the LICENSE file for deta
 **Aviraj Salunkhe**  
 📧 [avirajsalunkhe1@gmail.com](mailto:avirajsalunkhe1@gmail.com)  
 🌐 [GitHub Profile](https://github.com/avirajsalunkhe)
+
+**Swayam Gunjal** 
+📧 [Email Me](mailto:swayamgunjal.it.nbnistic@gmail.com) 
+🌐 [GitHub Profile](https://github.com/SwayamGunjal)
+
+**Vedant Ghode**
+📧 [Email Me](mailto:vedantghode32@gmail.com) 
+🌐 [GitHub Profile](https://github.com/vveeddntt)
