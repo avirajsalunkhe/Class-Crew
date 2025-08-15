@@ -1,6 +1,6 @@
-# 📚 EduBatch Pro
+# 📚 Class Crew
 
-> **EduBatch Pro** is a PHP-based platform designed to streamline batch, student, and test management for academic and training institutions. It offers powerful tools for administrators to manage students, schedule tests, upload notices, and track performance — all through a secure and intuitive web interface.
+> **Class Crew** is a PHP-based platform designed to streamline batch, student, and test management for academic and training institutions. It offers powerful tools for administrators to manage students, schedule tests, upload notices, and track performance — all through a secure and intuitive web interface.
 
 ---
 
