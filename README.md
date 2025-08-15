@@ -91,9 +91,6 @@ Open a Pull Request
 This project is licensed under the MIT License – see the LICENSE file for details.
 
 👤 Author
-Aviraj Salunkhe
-GitHub Profile
-
-yaml
-Copy
-Edit
+**Aviraj Salunkhe**  
+📧 [avirajsalunkhe1@gmail.com](mailto:avirajsalunkhe1@gmail.com)  
+🌐 [GitHub Profile](https://github.com/avirajsalunkhe)
