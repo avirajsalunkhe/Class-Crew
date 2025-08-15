@@ -53,8 +53,8 @@ Edit
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/EduBatchPro.git
-   cd EduBatchPro
+   git clone https://github.com/yourusername/Class-Crew.git
+   cd Class-Crew
 Set Up the Database
 
 Import the provided SQL file into your MySQL server
@@ -91,6 +91,7 @@ Open a Pull Request
 This project is licensed under the MIT License – see the LICENSE file for details.
 
 👤 Author
+
 **Aviraj Salunkhe**  
 📧 [avirajsalunkhe1@gmail.com](mailto:avirajsalunkhe1@gmail.com)  
 🌐 [GitHub Profile](https://github.com/avirajsalunkhe)
