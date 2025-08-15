@@ -71,7 +71,7 @@ Run the Application
 
 Place the project in your PHP server’s root directory (e.g., htdocs for XAMPP)
 
-Start your local server and open http://localhost/EduBatchPro
+Start your local server and open http://localhost/Class-Crew
 
 📸 Screenshots
 (Add screenshots here)
