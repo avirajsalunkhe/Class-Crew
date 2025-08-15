@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #F8FDFF;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background-color: white;
+    padding: 2rem;
+    border-right: 1px solid #eee;
+    position: fixed;
+    height: 100vh;
+    z-index: 1000;
+}
+
+.logo h1 {
+    color: #11137D;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.5rem;
+    color: #666;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.sidebar nav ul li.active {
+    background-color: #f5f5f5;
+    color: #11137D;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+    margin-left: 250px;
+    padding: 2rem;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.search-bar {
+    position: relative;
+    width: 400px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #eee;
+    border-radius: 2rem;
+    outline: none;
+}
+
+.search-bar i {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #11137D;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.notification-btn {
+    background: none;
+    border: none;
+    color: #11137D;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.profile-name {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.profile-role {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Content Layout */
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 2rem;
+}
+
+/* QR Code Section */
+.attendance-section h1 {
+    color: #11137D;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.qr-actions {
+    /* display: flex; */
+    gap: 1rem;
+    margin-bottom: 2rem;
+    display: grid; 
+    place-items: center;
+}
+
+.action-btn {
+    padding: 0.8rem 2rem;
+    background: #F8FDFF;
+    border: none;
+    border-radius: 0.5rem;
+    color: #11137D;
+    font-weight: bold;
+    cursor: pointer;
+    width: 200px;
+}
+
+#qrcode.qrcode {
+    text-align: center;
+    margin-bottom: 2rem;
+    display: grid; 
+    place-items: center;
+}
+
+.qr-code img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+/* Date Selector */
+.date-selector {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.date-item {
+    min-width: 80px;
+    padding: 1rem;
+    background: #E8F0FE;
+    border-radius: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.date-item.active {
+    background: #11137D;
+    color: white;
+}
+
+.date {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+}
+
+/* Attendance List */
+.attendance-list h2 {
+    color: #11137D;
+    margin-bottom: 1.5rem;
+}
+
+.student-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.check-time {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.check-time i {
+    color: #FF8A65;
+    font-size: 0.5rem;
+}
+
+.status {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+}
+
+.status.present {
+    background: #E8FFF3;
+    color: #00B341;
+}
+
+.status.absent {
+    background: #FFE5E5;
+    color: #FF4444;
+}
+
+/* Message Section */
+.message-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.message-section h2 {
+    color: #11137D;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #11137D;
+    font-weight: 500;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #eee;
+    border-radius: 0.5rem;
+    appearance: none;
+    background: white;
+}
+
+.select-wrapper i {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #11137D;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 0.5rem;
+    resize: none;
+}
+
+.message-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.send-btn {
+    padding: 0.8rem 2rem;
+    background: #11137D;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.attach-btn {
+    padding: 0.8rem 1rem;
+    background: none;
+    border: 1px solid #11137D;
+    color: #11137D;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .message-section {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+    
+    .sidebar.active {
+        transform: translateX(0);
+    }
+    
+    .main-content {
+        margin-left: 0;
+    }
+    
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .search-bar {
+        width: 100%;
+    }
+    
+    .header-right {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .qr-actions {
+        flex-direction: column;
+    }
+    
+    .action-btn {
+        width: 100%;
+    }
+    
+    .message-actions {
+        flex-direction: column;
+    }
+    
+    .send-btn, .attach-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-info {
+        display: none;
+    }
+    
+    .student-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .date-selector {
+        gap: 0.5rem;
+    }
+    
+    .date-item {
+        min-width: 60px;
+        padding: 0.8rem;
+    }
+}
